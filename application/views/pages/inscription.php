@@ -1,5 +1,4 @@
 <?php
-
     if(!empty($_POST)){
         extract($_POST);
         $valid = (boolean) true;
@@ -288,7 +287,7 @@
                     </select>
                 </div>
             </section>
-            <input type="submit" name="inscription" value="S'inscrire">
+            <input type="submit" name="inscription" value="Envoyer">
             <input type="button" onclick="history.back()" value="Retour">
         </form>
     </div>
