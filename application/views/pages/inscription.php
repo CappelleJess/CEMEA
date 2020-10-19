@@ -101,15 +101,17 @@
                 }
                 if(empty($occupation)){
                     $valid = false;
-                    $err_occupation = "Veuillez renseigner ce champs!";
+                }
+                if(empty($assoc)){
+                    $valid = false;
                 }
 
                 if($valid) {
                     $date_inscription = date("Y-m-d");
 
-                    $req = $BDD->prepare("INSERT INTO inscription(prénom, nom, email, genre, date_naissance, lieu_naissance, adresse, numero, code_postal, localite, pays, telephone, gsm, fax, occupation, date_inscription VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+                    $req = $BDD->prepare("INSERT INTO inscription(prénom, nom, email, genre, date_naissance, lieu_naissance, adresse, numero, code_postal, localite, pays, telephone, gsm, fax, occupation, assoc, date_inscription VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 
-                    $req->execute(array($prénom, $nom, $email, $genre, $date_naissance, $lieu_naissance, $adresse, $numero, $code_postal, $localite, $pays, $telephone, $gsm, $fax, $occupation, $date_inscription));
+                    $req->execute(array($prénom, $nom, $email, $genre, $date_naissance, $lieu_naissance, $adresse, $numero, $code_postal, $localite, $pays, $telephone, $gsm, $fax, $occupation, $assoc, $date_inscription));
                     }
                 }   
             }
@@ -277,7 +279,7 @@
                             echo $err_occupation;                        
                         } 
                     ?>
-                    
+
                     <select name="occupation" id="occupation">
                         <option style="display:none;" selected="">Occupation</option>
                         <option value="2">Etudiant</option>
@@ -285,6 +287,16 @@
                         <option value="4">Demandeur d'emploi</option>
                     </select>
                 </div>
+                    <?php 
+                        if(isset($err_assoc)){
+                            echo $err_assoc;
+                        }
+                    ?>
+                    <p>Faites-vous partie d'une association?<br>
+                    <input type="radio" id="oui" name="assoc "value="1">
+                        <label for="oui">Oui</label><br>
+                    <input type="radio" id="non" name="assoc "value="2">
+                        <label for="non">Non</label><br></p>
             </section>
             <input type="submit" name="inscription" value="Envoyer">
             <input type="button" onclick="history.back()" value="Retour">
