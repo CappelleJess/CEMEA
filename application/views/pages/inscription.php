@@ -103,6 +103,7 @@
                     $valid = false;
                     $err_occupation = "Veuillez renseigner ce champs!";
                 }
+                
 
                 if($valid) {
                     $date_inscription = date("Y-m-d");
@@ -279,7 +280,7 @@
                     ?>
                     <label>Occupation:</label>
                     <select name="occupation" id="occupation" onChange="getElementById('OCCUPATION_ID').value = this.value">
-                        <option style="display:none;" selected="">Occupation</option>
+                        <option style="display:none;" selected=""></option>
                         <option value="2">Etudiant</option>
                         <option value="3">Travailleur</option>
                         <option value="4">Demandeur d'emploi</option>

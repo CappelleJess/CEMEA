@@ -36,14 +36,15 @@
             						<a class="nav-link" href="contact">Contact</a>
           						</li>
          					</ul>
-        
+                  <li class="nav-item">
+                        <a class="nav-link" href="signinup">Connexion</a>
+                  </li>
         				<form class="form-inline my-2 my-lg-0 pull-right">
           					<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          						<button class="btn btn-outline-success my-2 my-sm-0" type="submit" >Search</button>
+          					<button class="btn btn-outline-success my-2 my-sm-0" type="submit" >Search</button>
         				</form>
       					</div>
     			</nav>
-
 					<script src="jquery-3.3.1.min.js"></script>
 					<script src="bootstrap/js/bootstrap.min.js"></script>
 		</body>
