@@ -129,12 +129,16 @@
                     <input type="text" name="email" placeholder="Adresse E-mail*" required>
                 </div>
                 <div class="form-group">
-                    <select name="genre" required>
-                        <option style="display:none;">Genre</option>
-                        <option value="2">Femme</option>
-                        <option value="3">Homme</option>
-                        <option value="4">Autre</option>
-                    </select>
+                    <section class="col-sm-1">
+                    <form class="form-inline">
+                        <select class="custom-select my-1 mr-sm-2" id="genre">
+                            <option selected>Genre</option>
+                            <option value="1">Femme</option>
+                            <option value="2">Homme</option>
+                            <option value="3">Autre</option>
+                        </select>
+                    </form>
+                </section>
                 </div>
                 <section class="col-sm-1">
                     <div class="form-group">
