@@ -35,10 +35,10 @@
          	    				<li class="nav-item">
             						<a class="nav-link" href="contact">Contact</a>
           						</li>
-         					</ul>
-                  <li class="nav-item">
+                      <li class="nav-item">
                         <a class="nav-link" href="signinup">Connexion</a>
-                  </li>
+                      </li>
+         					</ul>
         				<form class="form-inline my-2 my-lg-0 pull-right">
           					<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
           					<button class="btn btn-outline-success my-2 my-sm-0" type="submit" >Search</button>

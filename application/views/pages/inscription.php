@@ -25,17 +25,14 @@
 
                 if(empty($prénom)){
                     $valid = false;
-                    $err_prénom = "Veuillez renseigner ce champs!";
                 }
 
                 if(empty($nom)){
                     $valid = false;
-                    $err_nom = "Veuillez renseigner ce champs!";
                 }
 
                 if(empty($email)){
                     $valid = false;
-                    $err_email = "Veuillez renseigner ce champs!";
                 }
 
                 if(empty($genre)){
@@ -44,17 +41,14 @@
 
                 if($jour <= 0 || $jour < 31){
                     $valid = false;
-                    $err_jour = "Veuillez renseigner ce champs!";
                 }
 
                 if($mois <= 0 || $mois < 12){
                     $valid = false;
-                    $err_mois = "Veuillez renseigner ce champs!";
                 }
 
                 if($annee <= 1960 || $annee < 2002){
                     $valid = false;
-                    $err_annee = "Veuillez renseigner ce champs!";
                 }
 
                 if(!checkdate($mois, $jour, $annee)){
@@ -68,27 +62,21 @@
 
                 if(in_array($lieu_naissance, $verif_lieu)){
                     $valid = false;
-                    $err_lieu = "Veuillez renseigner ce champs!";
-                    }
+                }
                 if(empty($adresse)){
                     $valid = false;
-                    $err_adresse = "Veuillez renseigner ce champs!";
                 }
                 if(empty($numero)){
                     $valid = false;
-                    $err_numero = "Veuillez renseigner ce champs!";
                 }
                 if(empty($code_postal)){
                     $valid = false;
-                    $err_code_postal = "Veuillez renseigner ce champs!";
                 }
                 if(empty($localite)){
                     $valid = false;
-                    $err_localite = "Veuillez renseigner ce champs!";
                 }
                 if(empty($pays)){
                     $valid = false;
-                    $err_pays = "Veuillez renseigner ce champs!";
                 }
                 if(empty($telephone)){
                     $valid = false;
@@ -120,67 +108,53 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
     </head>
         <body>
-             <main role="main">
-                <div class="jumbotron">
-                    <div class="container">
         <form method="post">
-            <section>
-                <div>
-                    <?php
-                        if(isset($err_prénom)){
-                            echo $err_prénom;                        
-                        } 
-                    ?>
-                    <input type="text" name="prénom" placeholder="Prénom*">
+            <fieldset>
+                <legend>S'inscrire à une formation</legend>
+                <ul>
+                <div class="form-group">
+                    <input type="text" name="prénom" placeholder="Prénom*" required>
                 </div>
-                <div>
-                    <?php
-                        if(isset($err_nom)){
-                            echo $err_nom;                        
-                        } 
-                    ?>
-                    <input type="text" name="nom" placeholder="Nom*">
+                <div class="form-group">
+                    <input type="text" name="nom" placeholder="Nom*" required>
                 </div>
-                <div>
-                    <?php
-                        if(isset($err_email)){
-                            echo $err_email;                        
-                        } 
-                    ?>
-                    <input type="text" name="email" placeholder="Adresse E-mail*">
+                <div class="form-group">
+                    <input type="text" name="email" placeholder="Adresse E-mail*" required>
                 </div>
-                <div>
-                    <?php
-                        if(isset($err_genre)){
-                            echo $err_genre;                        
-                        } 
-                    ?>
-                    <select name="genre">
-                        <option style="display:none;" selected>Genre</option>
+                <div class="form-group">
+                    <select name="genre" required>
+                        <option style="display:none;">Genre</option>
                         <option value="2">Femme</option>
                         <option value="3">Homme</option>
                         <option value="4">Autre</option>
                     </select>
-                </div>                
-                <div>
-                    <?php
-                        if(isset($err_date)){
-                            echo $err_date;                        
-                        } 
-                    ?>
-                    <select name="jour">
-                        <?php 
-                            for($i = 1; $i<= 31; $i++){
-                        ?>
-                        <option style="display:none;" selected>Jour</option>
-                        <option value="Jour; <?= $i ?>"><?= $i ?></option>
-                        <?php
-                            }
-                        ?>
-                    </select>
-                    <select name="mois">
+                </div>
+                <section class="col-sm-6">
+                    <div class="form-group">
+                        <div class="input-group date" data-provide="datepicker">
+                            <input type="text" class="form-control">
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
+                </section>
+                <script type="text/javascript">
+                    $(function(){
+                        $('.datepicker').datepicker();
+                    });
+                </script>
+                    <select name="mois" required>
                         <?php 
                             for($i = 1; $i<= 12; $i++){
                         ?>
@@ -190,7 +164,7 @@
                             }
                         ?>
                     </select>
-                    <select name="annee">
+                    <select name="annee" required>
                         <?php 
                             for($i = 1960; $i<= 2002; $i++){
                         ?>
@@ -201,7 +175,7 @@
                         ?>
                     </select>
                 </div>                
-                <div>
+                <div class="form-group">
                     <?php
                         if(isset($err_lieu)){
                             echo $err_lieu;                        
@@ -209,47 +183,47 @@
                     ?>
                     <input type="text" name="lieu_naissance" placeholder="Lieu de naissance">
                 </div>
-                <div>
+                <div class="form-group">
                     <?php
                         if(isset($err_adresse)){
                             echo $err_adresse;
                         }
                     ?>
-                    <input type="text" name="adresse" placeholder="Adresse*">
+                    <input type="text" name="adresse" placeholder="Adresse*" required>
                 </div>
-                <div>
+                <div class="form-group">
                     <?php
                         if(isset($err_numero)){
                             echo $err_numero;
                         }
                     ?>
-                    <input type="text" name="numero" placeholder="N°*">
+                    <input type="text" name="numero" placeholder="N°*" required>
                 </div>
-                <div>
+                <div class="form-group">
                     <?php
                         if(isset($err_code_postal)){
                             echo $err_code_postal;
                         }
                     ?>
-                    <input type="text" name="code_postal" placeholder="Code Postal*">
+                    <input type="text" name="code_postal" placeholder="Code Postal*" required>
                 </div>
-                <div>
+                <div class="form-group">
                     <?php
                         if(isset($err_localite)){
                             echo $err_localite;
                         }
                     ?>
-                    <input type="text" name="localite" placeholder="Localité*">
+                    <input type="text" name="localite" placeholder="Localité*" required>
                 </div>
-                <div>
+                <div class="form-group">
                     <?php
                         if(isset($err_pays)){
                             echo $err_pays;
                         }
                     ?>
-                    <input type="text" name="pays" placeholder="Pays">
+                    <input type="text" name="pays" placeholder="Pays" required>
                 </div>
-                <div>
+                <div class="form-group">
                     <?php
                         if(isset($err_telephone)){
                             echo $err_telephone;
@@ -257,15 +231,15 @@
                     ?>
                     <input type="text" name="telephone" placeholder="Téléphone">
                 </div>
-                <div>
+                <div class="form-group">
                     <?php
                         if(isset($err_gsm)){
                             echo $err_gsm;
                         }
                     ?>
-                    <input type="text" name="gsm" placeholder="GSM">
+                    <input type="text" name="gsm" placeholder="GSM*" required>
                 </div>
-                <div>
+                <div class="form-group">
                     <?php
                         if(isset($err_fax)){
                             echo $err_fax;
@@ -273,36 +247,46 @@
                     ?>
                     <input type="text" name="fax" placeholder="Fax">
                 </div>
-                <div>
+                <div class="form-group">
                     <?php
                         if(isset($err_occupation)){
                             echo $err_occupation;                        
                         } 
                     ?>
 
-                    <select name="occupation" id="occupation">
+                    <select name="occupation" id="occupation" required>
                         <option style="display:none;" selected="">Occupation</option>
                         <option value="2">Etudiant</option>
                         <option value="3">Travailleur</option>
                         <option value="4">Demandeur d'emploi</option>
                     </select>
-                </div>
-                    <?php 
-                        if(isset($err_assoc)){
-                            echo $err_assoc;
-                        }
-                    ?>
+                </div><br>
+                <div class="form-group">
                     <p>Faites-vous partie d'une association?<br>
                     <input type="radio" id="oui" name="assoc "value="1">
                         <label for="oui">Oui</label><br>
                     <input type="radio" id="non" name="assoc "value="2">
                         <label for="non">Non</label><br></p>
-            </section>
-            <input type="submit" name="inscription" value="Envoyer">
-            <input type="button" onclick="history.back()" value="Retour">
+                </div>
+                </ul>
+            </fieldset>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" onclick="history.back()" class="btn btn-primary">Retour</button>
         </form>
     </div>
 </div>
 </main>
     </body>
 </html>
+
+
+
+<!-- régime alimentaire
+covoiturage
+facture
+adresse de facture
+centres d'intérets -->
