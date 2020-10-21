@@ -119,14 +119,14 @@
             <fieldset>
                 <legend>S'inscrire à une formation</legend>
                 <ul>
-                <div class="form-group">
-                    <input type="text" name="prénom" placeholder="Prénom*" required>
+                <div class="form-group w-25">
+                    <input type="text" class="form-control" name="prénom" placeholder="Prénom" required>
                 </div>
-                <div class="form-group">
-                    <input type="text" name="nom" placeholder="Nom*" required>
+                <div class="form-group w-25">
+                    <input type="text" class="form-control" name="nom" placeholder="Nom" required>
                 </div>
-                <div class="form-group">
-                    <input type="text" name="email" placeholder="Adresse E-mail*" required>
+                <div class="form-group w-25">
+                    <input type="text" class="form-control" name="email" placeholder="Adresse E-mail" required>
                 </div>
                 <div class="form-group">
                     <section class="col-sm-1">
@@ -155,107 +155,64 @@
                         $('.datepicker').datepicker();
                     });
                 </script>
-                <div class="form-group">
-                    <?php
-                        if(isset($err_lieu)){
-                            echo $err_lieu;                        
-                        } 
-                    ?>
-                    <input type="text" name="lieu_naissance" placeholder="Lieu de naissance">
+                <div class="form-group w-25">
+                    <input type="text" class="form-control" name="lieu_naissance" placeholder="Lieu de naissance">
                 </div>
-                <div class="form-group">
-                    <?php
-                        if(isset($err_adresse)){
-                            echo $err_adresse;
-                        }
-                    ?>
-                    <input type="text" name="adresse" placeholder="Adresse*" required>
+                <div class="form-group w-25">
+                    <input type="text" class="form-control" name="adresse" placeholder="Adresse" required>
                 </div>
-                <div class="form-group">
-                    <?php
-                        if(isset($err_numero)){
-                            echo $err_numero;
-                        }
-                    ?>
-                    <input type="text" name="numero" placeholder="N°*" required>
+                <div class="form-group w-25">
+                    <input type="text" class="form-control" name="numero" placeholder="N°" required>
                 </div>
-                <div class="form-group">
-                    <?php
-                        if(isset($err_code_postal)){
-                            echo $err_code_postal;
-                        }
-                    ?>
-                    <input type="text" name="code_postal" placeholder="Code Postal*" required>
+                <div class="form-group w-25">
+                    <input type="text" class="form-control" name="code_postal" placeholder="Code Postal" required>
                 </div>
-                <div class="form-group">
-                    <?php
-                        if(isset($err_localite)){
-                            echo $err_localite;
-                        }
-                    ?>
-                    <input type="text" name="localite" placeholder="Localité*" required>
+                <div class="form-group w-25">
+                    <input type="text" class="form-control" name="localite" placeholder="Localité" required>
                 </div>
-                <div class="form-group">
-                    <?php
-                        if(isset($err_pays)){
-                            echo $err_pays;
-                        }
-                    ?>
-                    <input type="text" name="pays" placeholder="Pays" required>
+                <div class="form-group w-25">
+                    <input type="text" class="form-control" name="pays" placeholder="Pays" required>
                 </div>
-                <div class="form-group">
-                    <?php
-                        if(isset($err_telephone)){
-                            echo $err_telephone;
-                        }
-                    ?>
-                    <input type="text" name="telephone" placeholder="Téléphone">
+                <div class="form-group w-25">
+                    <input type="text" class="form-control" name="telephone" placeholder="Téléphone">
                 </div>
-                <div class="form-group">
-                    <?php
-                        if(isset($err_gsm)){
-                            echo $err_gsm;
-                        }
-                    ?>
-                    <input type="text" name="gsm" placeholder="GSM*" required>
+                <div class="form-group w-25">
+                    <input type="text" class="form-control" name="gsm" placeholder="GSM" required>
                 </div>
-                <div class="form-group">
-                    <?php
-                        if(isset($err_fax)){
-                            echo $err_fax;
-                        }
-                    ?>
-                    <input type="text" name="fax" placeholder="Fax">
+                <div class="form-group w-25">
+                    <input type="text" class="form-control" name="fax" placeholder="Fax">
                 </div>
-                <div class="form-group">
-                    <?php
-                        if(isset($err_occupation)){
-                            echo $err_occupation;                        
-                        } 
-                    ?>
-
-                    <select name="occupation" id="occupation" required>
-                        <option style="display:none;" selected="">Occupation</option>
-                        <option value="2">Etudiant</option>
-                        <option value="3">Travailleur</option>
-                        <option value="4">Demandeur d'emploi</option>
-                    </select>
-                </div><br>
-                <div class="form-group">
+                    <div class="form-group">
+                    <section class="col-sm-2">
+                    <form class="form-inline">
+                        <select class="custom-select my-3 mr-sm-3" id="genre">
+                            <option selected>Occupation</option>
+                            <option value="1">Étudiant.e</option>
+                            <option value="2">Travailleur.se</option>
+                            <option value="3">Demandeur.euse d'emploi</option>
+                        </select>
+                    </form>
+                </section>
+                </div>
                     <p>Faites-vous partie d'une association?<br>
-                    <input type="radio" id="oui" name="assoc "value="1">
-                        <label for="oui">Oui</label><br>
-                    <input type="radio" id="non" name="assoc "value="2">
-                        <label for="non">Non</label><br></p>
-                </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio1">Oui</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio2">Non</label>
+                    </div>
                 </ul>
             </fieldset>
-            <div class="form-check">
+            <!-- <div class="form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                <label class="form-check-label" for="exampleCheck1">J'accepte les conditions d'utilisations</label>
+            </div> -->
+            <div class="container" style="margin: 20px">
+                <button type="submit" class="btn btn-success">Submit</button>
+                <button type="submit" onclick="history.back()" class="btn btn-danger">Retour</button>
             </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-                <button type="submit" onclick="history.back()" class="btn btn-primary">Retour</button>
         </form>
     </div>
 </div>
