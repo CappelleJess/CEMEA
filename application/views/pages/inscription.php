@@ -116,8 +116,8 @@
     </head>
         <body>
         <form method="post">
-            <fieldset>
-                <legend>S'inscrire à une formation</legend>
+            <fieldset class="border p-2">
+                <legend  class="w-auto">S'inscrire à une formation</legend>
                 <ul>
                 <div class="form-group w-25">
                     <input type="text" class="form-control" name="prénom" placeholder="Prénom" required>
@@ -186,7 +186,7 @@
                     <section class="col-sm-2">
                     <form class="form-inline">
                         <select class="custom-select my-3 mr-sm-3" id="genre">
-                            <option selected>Occupation</option>
+                            <option disabled selected>Occupation</option>
                             <option value="1">Étudiant.e</option>
                             <option value="2">Travailleur.se</option>
                             <option value="3">Demandeur.euse d'emploi</option>
@@ -203,8 +203,50 @@
                         <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
                         <label class="custom-control-label" for="customRadio2">Non</label>
                     </div>
+                    <br>
+                    <p>Régime alimentaire dans le cadre d'une formation résidentielle</p>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio3">Sans viande</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio4">Avec viande</label>
+                    </div>
+                    <br>
+                    <p>Souhaitez-vous une facture?</p>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="radioOui" name="facture" value="Oui" required onclick="validate();" class="custom-control-input">
+                        <label class="custom-control-label" for="radioOui">Oui</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="radioNon" name="facture" value="Non" required onclick="validate();" class="custom-control-input">
+                        <label class="custom-control-label" for="radioNon">Non</label>
+                    </div>
+
+
+
+                        <!-- <input type="radio" name="facture" value="Oui" required onclick="validate();" id="radioOui">Oui
+                        <input type="radio" name="facture" value="Non" required onclick="validate();" id="radioNon">Non -->
+                        <script type="text/javascript">
+                            function validate() {
+                                var radioOui = document.getElementById('radioOui');
+                                var textarea = document.getElementById('facturecomment');
+
+                                if (radioOui.checked && facturecomment.value.length < 1) {
+                                    facturecomment.focus();
+                                    document.getElementById('facturecomment').disabled = false;
+                                    return false;
+                                } else {
+                                    document.getElementById('facturecomment').disabled = true;
+                                }     
+                            }
+                        </script>
+                        <textarea name="facturecomment" id="facturecomment" rows="5" cols="40" required>Veuillez inscrire une adresse de facturation</textarea>
                 </ul>
             </fieldset>
+
+
             <!-- <div class="form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">J'accepte les conditions d'utilisations</label>
