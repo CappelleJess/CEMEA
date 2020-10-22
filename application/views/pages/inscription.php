@@ -246,19 +246,17 @@
                             <input class="form-control" name="facturecomment" id="facturecomment" placeholder="Veuillez inscrire l'adresse complète" rows="5" cols="40" required>
                         </div>
                         <br>
-                        <div class="btn-group dropup">
+                        <div class="btn-group">
                             <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Centres d'intérêt</button>
                                 <div class="dropdown-menu">
-                                    <a href="#" class="dropdown-item  dropdown-item-checked">Item 1</a>
-                                    <a href="#" class="dropdown-item">Item 2</a>
-                                    <a href="#" class="dropdown-item">Item 3</a>
                                 </div>
                         </div>
-                        <script type="text/javascript">
+
+                        <!--<script type="text/javascript">
                             $(document).on('click', '.dropdown-item', function(event) {
                                 event.preventDefault();
                                 $(this).toggleClass('dropdown-item-checked');  
-                        });</script>
+                        });</script> -->
                 </ul>
             </fieldset>
             <!-- <div class="form-check">
