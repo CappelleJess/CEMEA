@@ -242,7 +242,9 @@
                                 }     
                             }
                         </script>
-                        <textarea name="facturecomment" id="facturecomment" rows="5" cols="40" required>Veuillez inscrire une adresse de facturation</textarea>
+                        <div class="form-group w-25">
+                            <input class="form-control" name="facturecomment" id="facturecomment" placeholder="Veuillez inscrire l'adresse complète" rows="5" cols="40" required>
+                        </div>
                 </ul>
             </fieldset>
 
