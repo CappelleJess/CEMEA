@@ -241,14 +241,26 @@
                                     document.getElementById('facturecomment').disabled = true;
                                 }     
                             }
-                        </script>
+                        </script><br>
                         <div class="form-group w-25">
                             <input class="form-control" name="facturecomment" id="facturecomment" placeholder="Veuillez inscrire l'adresse complète" rows="5" cols="40" required>
                         </div>
+                        <br>
+                        <div class="btn-group dropup">
+                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Centres d'intérêt</button>
+                                <div class="dropdown-menu">
+                                    <a href="#" class="dropdown-item  dropdown-item-checked">Item 1</a>
+                                    <a href="#" class="dropdown-item">Item 2</a>
+                                    <a href="#" class="dropdown-item">Item 3</a>
+                                </div>
+                        </div>
+                        <script type="text/javascript">
+                            $(document).on('click', '.dropdown-item', function(event) {
+                                event.preventDefault();
+                                $(this).toggleClass('dropdown-item-checked');  
+                        });</script>
                 </ul>
             </fieldset>
-
-
             <!-- <div class="form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">J'accepte les conditions d'utilisations</label>
