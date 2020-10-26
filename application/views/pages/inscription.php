@@ -242,6 +242,7 @@
                                 }     
                             }
                         </script><br>
+
                         <div class="form-group w-25">
                             <input class="form-control" name="facturecomment" id="facturecomment" placeholder="Veuillez inscrire l'adresse complète" rows="5" cols="40" required>
                         </div>
@@ -259,10 +260,10 @@
                         });</script> -->
                 </ul>
             </fieldset>
-            <!-- <div class="form-check">
+            <div class="form-check" style="margin: 20px">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">J'accepte les conditions d'utilisations</label>
-            </div> -->
+            </div>
             <div class="container" style="margin: 20px">
                 <button type="submit" class="btn btn-success">Submit</button>
                 <button type="submit" onclick="history.back()" class="btn btn-danger">Retour</button>
