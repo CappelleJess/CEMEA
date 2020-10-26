@@ -112,6 +112,7 @@
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
         <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
     </head>
         <body>
@@ -223,9 +224,6 @@
                         <input type="radio" id="radioNon" name="facture" value="Non" required onclick="validate();" class="custom-control-input">
                         <label class="custom-control-label" for="radioNon">Non</label>
                     </div>
-
-
-
                         <!-- <input type="radio" name="facture" value="Oui" required onclick="validate();" id="radioOui">Oui
                         <input type="radio" name="facture" value="Non" required onclick="validate();" id="radioNon">Non -->
                         <script type="text/javascript">
@@ -242,23 +240,113 @@
                                 }     
                             }
                         </script><br>
-
                         <div class="form-group w-25">
                             <input class="form-control" name="facturecomment" id="facturecomment" placeholder="Veuillez inscrire l'adresse complète" rows="5" cols="40" required>
                         </div>
+
                         <br>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Centres d'intérêt</button>
-                                <div class="dropdown-menu">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Centres d'intérêt</button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <label class="dropdown-item">
+                                        <input type="checkbox" name="dropdown-group" value="01" style="margin-right: 10px;"/>Programme complet des formations
+                                    </label>
+                                    <label class="dropdown-item">
+                                        <input type="checkbox" name="dropdown-group" value="02" style="margin-right: 10px;"/>Centres et plaines de vacances - Ateliers d’expression
+                                    </label>
+                                    <label class="dropdown-item">
+                                        <input type="checkbox" name="dropdown-group" value="03" style="margin-right: 10px;"/>Animateur volontaire de jeunesse
+                                    </label>
+                                    <label class="dropdown-item">
+                                        <input type="checkbox" name="dropdown-group" value="04" style="margin-right: 10px;"/>Animateur professionnel et animation de quartier
+                                    </label>
+                                    <label class="dropdown-item">
+                                        <input type="checkbox" name="dropdown-group" value="05" style="margin-right: 10px;"/>Coordinateur volontaire de jeunesse
+                                    </label>
+                                    <label class="dropdown-item">
+                                        <input type="checkbox" name="dropdown-group" value="06" style="margin-right: 10px;"/>Formation pour formateurs
+                                    </label>
+                                    <label class="dropdown-item">
+                                        <input type="checkbox" name="dropdown-group" value="07" style="margin-right: 10px;"/>Petite enfance
+                                    </label>
+                                    <label class="dropdown-item">
+                                        <input type="checkbox" name="dropdown-group" value="08" style="margin-right: 10px;"/>Enseignement
+                                    </label>
+                                    <label class="dropdown-item">
+                                        <input type="checkbox" name="dropdown-group" value="09" style="margin-right: 10px;"/>Accueillant(e) extra-scolaire
+                                    </label>
+                                    <label class="dropdown-item">
+                                        <input type="checkbox" name="dropdown-group" value="10" style="margin-right: 10px;"/>Formation de délégués d’élèves
+                                    </label>
+                                    <label class="dropdown-item">
+                                        <input type="checkbox" name="dropdown-group" value="11" style="margin-right: 10px;"/>Rencontres entre l’enseignement spécial et l’enseignement ordinaire
+                                    </label>
+                                    <label class="dropdown-item">
+                                        <input type="checkbox" name="dropdown-group" value="12" style="margin-right: 10px;"/>Handicap et intégration
+                                    </label>
+                                    <label class="dropdown-item">
+                                        <input type="checkbox" name="dropdown-group" value="13" style="margin-right: 10px;"/>Action sociale
+                                    </label>
+                                    <label class="dropdown-item">
+                                        <input type="checkbox" name="dropdown-group" value="14" style="margin-right: 10px;"/>Santé
+                                    </label>
+                                    <label class="dropdown-item">
+                                        <input type="checkbox" name="dropdown-group" value="15" style="margin-right: 10px;"/>Pédagogie
+                                    </label>
+                                    <label class="dropdown-item">
+                                        <input type="checkbox" name="dropdown-group" value="16" style="margin-right: 10px;"/>Jeunes enfants 2,5 - 8 ans
+                                    </label>
+                                    <label class="dropdown-item">
+                                        <input type="checkbox" name="dropdown-group" value="17" style="margin-right: 10px;"/>Audio-visuel
+                                    </label>
+                                    <label class="dropdown-item">
+                                        <input type="checkbox" name="dropdown-group" value="18" style="margin-right: 10px;"/>Activités théâtrales, expression corporelle
+                                    </label>
+                                    <label class="dropdown-item">
+                                        <input type="checkbox" name="dropdown-group" value="19" style="margin-right: 10px;"/>Expression orale et écrite
+                                    </label>
+                                    <label class="dropdown-item">
+                                        <input type="checkbox" name="dropdown-group" value="20" style="margin-right: 10px;"/>Activités manuelles et plastiques
+                                    </label>
+                                    <label class="dropdown-item">
+                                        <input type="checkbox" name="dropdown-group" value="21" style="margin-right: 10px;"/>Découverte du milieu
+                                    </label>
+                                    <label class="dropdown-item">
+                                        <input type="checkbox" name="dropdown-group" value="22" style="margin-right: 10px;"/>Activités musicales
+                                    </label>
+                                    <label class="dropdown-item">
+                                        <input type="checkbox" name="dropdown-group" value="23" style="margin-right: 10px;"/>Jeux et activités physiques
+                                    </label>
+                                    <label class="dropdown-item">
+                                        <input type="checkbox" name="dropdown-group" value="24" style="margin-right: 10px;"/>Initiation technique et scientifique
+                                    </label>
+                                    <label class="dropdown-item">
+                                        <input type="checkbox" name="dropdown-group" value="25" style="margin-right: 10px;"/>Communication et gestion des groupes
+                                    </label>
+                                    <label class="dropdown-item">
+                                        <input type="checkbox" name="dropdown-group" value="26" style="margin-right: 10px;"/>Gestion et collectivité
+                                    </label>
+                                    <label class="dropdown-item">
+                                        <input type="checkbox" name="dropdown-group" value="27" style="margin-right: 10px;"/>Formation qualifiante
+                                    </label>
+                                    <label class="dropdown-item">
+                                        <input type="checkbox" name="dropdown-group" value="28" style="margin-right: 10px;"/>Pour une éducation à l’égalité des genres
+                                    </label>
+                                    <label class="dropdown-item">
+                                        <input type="checkbox" name="dropdown-group" value="29" style="margin-right: 10px;"/>Festival du Film d’Education
+                                    </label>
+                                    <label class="dropdown-item">
+                                        <input type="checkbox" name="dropdown-group" value="30" style="margin-right: 10px;"/>Newsletter du secteur Numérique
+                                    </label>
                                 </div>
                         </div>
-
                         <!--<script type="text/javascript">
                             $(document).on('click', '.dropdown-item', function(event) {
                                 event.preventDefault();
                                 $(this).toggleClass('dropdown-item-checked');  
                         });</script> -->
                 </ul>
+                <br>
             </fieldset>
             <div class="form-check" style="margin: 20px">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
