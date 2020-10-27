@@ -117,8 +117,8 @@
     </head>
         <body>
         <form method="post">
-            <fieldset class="border p-2">
-                <legend  class="w-auto">S'inscrire à une formation</legend>
+            <fieldset style="padding-top: 30px !important; margin-top: 27px !important;">
+                <legend style="height: auto; width: auto; margin-left: 60px; padding: 3px 5px; position: fixed; margin-top: -47px; border: 1px solid #e0e0e0; border-radius: 8px;">S'inscrire à une formation</legend>
                 <ul>
                 <div class="form-group w-25">
                     <input type="text" class="form-control" name="prénom" placeholder="Prénom" required>
