@@ -338,6 +338,17 @@
                                     <label class="dropdown-item">
                                         <input type="checkbox" name="dropdown-group" value="30" style="margin-right: 10px;"/>Newsletter du secteur Numérique
                                     </label>
+                                    <label class="dropdown-item">
+                                        <input type="checkbox" style="margin-right: 10px;" id="selectall" name="selectall" autocomplete="off" checked onclick="eventCheckBox()"/>Tout sélectionner
+                                            <script type="text/javascript">
+                                                function eventCheckBox() {
+                                                    let checkboxs = document.getElementsByTagName("input");
+                                                    for(let i = 1; i < checkboxs.length ; i++) {
+                                                        checkboxs[i].checked = !checkboxs[i].checked;
+                                                    }
+                                                }
+                                            </script>
+                                    </label>
                                 </div>
                         </div>
                         <!--<script type="text/javascript">
@@ -348,10 +359,6 @@
                 </ul>
                 <br>
             </fieldset>
-            <div class="form-check" style="margin: 20px">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">J'accepte les conditions d'utilisations</label>
-            </div>
             <div class="container" style="margin: 20px">
                 <button type="submit" class="btn btn-success">Submit</button>
                 <button type="submit" onclick="history.back()" class="btn btn-danger">Retour</button>
