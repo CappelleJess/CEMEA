@@ -380,7 +380,6 @@
                                 $(this).toggleClass('dropdown-item-checked');  
                         });</script> -->
                 </ul>
-                <br>
             <div class="modal-footer" style="margin: 20px">
                 <button type="submit" class="btn btn-success">Submit</button>
                 <button type="submit" onclick="history.back()" class="btn btn-danger">Retour</button>
