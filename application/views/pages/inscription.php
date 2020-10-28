@@ -133,29 +133,29 @@
     </head>
         <body>
             <div class="bs-example">
-    <div id="myModal" class="modal fade" tabindex="-1">
-        <div class="modal-dialog modal-lg">
+            <div id="myModal" class="modal fade bd-exemple" tabindex="-1" >
+            <div class="modal-dialog modal-lg">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">S'inscrire à une formation</h5>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div class="modal-header">
+                <h5 class="modal-title" style="margin-left: 40px;">S'inscrire à une formation</h5>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
-        <form method="post">
+                <form method="post">
                 <ul>
-                <div class="form-group w-25">
+                <div class="form-group w-50">
                     <input type="text" class="form-control" name="prénom" placeholder="Prénom" required>
                 </div>
-                <div class="form-group w-25">
+                <div class="form-group w-50">
                     <input type="text" class="form-control" name="nom" placeholder="Nom" required>
                 </div>
-                <div class="form-group w-25">
+                <div class="form-group w-50">
                     <input type="text" class="form-control" name="email" placeholder="Adresse E-mail" required>
                 </div>
                 <div class="form-group">
-                    <section class="col-sm-1">
+                    <section class="col-sm-3">
                     <form class="form-inline">
-                        <select class="custom-select my-1 mr-sm-2" id="genre">
+                        <select class="custom-select my-3 mr-sm-3" id="genre">
                             <option selected>Genre</option>
                             <option value="1">Femme</option>
                             <option value="2">Homme</option>
@@ -164,7 +164,7 @@
                     </form>
                 </section>
                 </div>
-                <section class="col-sm-1">
+                <section class="col-sm-3">
                     <div class="form-group">
                         <div class="input-group date" data-provide="datepicker">
                             <input type="text" class="form-control" id="date" placeholder="JJ/MM/AAAA">
@@ -179,37 +179,37 @@
                         $('.datepicker').datepicker();
                     });
                 </script>
-                <div class="form-group w-25">
+                <div class="form-group w-50">
                     <input type="text" class="form-control" name="lieu_naissance" placeholder="Lieu de naissance">
                 </div>
-                <div class="form-group w-25">
+                <div class="form-group w-50">
                     <input type="text" class="form-control" name="adresse" placeholder="Adresse" required>
                 </div>
-                <div class="form-group w-25">
+                <div class="form-group w-50">
                     <input type="text" class="form-control" name="numero" placeholder="N°" required>
                 </div>
-                <div class="form-group w-25">
+                <div class="form-group w-50">
                     <input type="text" class="form-control" name="code_postal" placeholder="Code Postal" required>
                 </div>
-                <div class="form-group w-25">
+                <div class="form-group w-50">
                     <input type="text" class="form-control" name="localite" placeholder="Localité" required>
                 </div>
-                <div class="form-group w-25">
+                <div class="form-group w-50">
                     <input type="text" class="form-control" name="pays" placeholder="Pays" required>
                 </div>
-                <div class="form-group w-25">
+                <div class="form-group w-50">
                     <input type="text" class="form-control" name="telephone" placeholder="Téléphone">
                 </div>
-                <div class="form-group w-25">
+                <div class="form-group w-50">
                     <input type="text" class="form-control" name="gsm" placeholder="GSM" required>
                 </div>
-                <div class="form-group w-25">
+                <div class="form-group w-50">
                     <input type="text" class="form-control" name="fax" placeholder="Fax">
                 </div>
                     <div class="form-group">
                     <section class="col-sm-2">
                     <form class="form-inline">
-                        <select class="custom-select my-3 mr-sm-3" id="genre">
+                        <select class="custom-select my-3 mr-sm-3" id="occupation">
                             <option disabled selected>Occupation</option>
                             <option value="1">Étudiant.e</option>
                             <option value="2">Travailleur.se</option>
@@ -263,7 +263,7 @@
                                 }     
                             }
                         </script><br>
-                        <div class="form-group w-25">
+                        <div class="form-group w-50">
                             <input class="form-control" name="facturecomment" id="facturecomment" placeholder="Veuillez inscrire l'adresse complète" rows="5" cols="40" required>
                         </div>
 
