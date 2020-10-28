@@ -134,16 +134,14 @@
         <body>
             <div class="bs-example">
     <div id="myModal" class="modal fade" tabindex="-1">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Confirmation</h5>
+                    <h5 class="modal-title">S'inscrire à une formation</h5>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
         <form method="post">
-            <fieldset style="padding-top: 30px !important; margin-top: 27px !important;">
-                <legend style="height: auto; width: auto; margin-left: 60px; padding: 3px 5px; position: absolute; margin-top: -47px; border: 1px solid #e0e0e0; border-radius: 8px;">S'inscrire à une formation</legend>
                 <ul>
                 <div class="form-group w-25">
                     <input type="text" class="form-control" name="prénom" placeholder="Prénom" required>
@@ -383,7 +381,6 @@
                         });</script> -->
                 </ul>
                 <br>
-            </fieldset>
             <div class="container" style="margin: 20px">
                 <button type="submit" class="btn btn-success">Submit</button>
                 <button type="submit" onclick="history.back()" class="btn btn-danger">Retour</button>
