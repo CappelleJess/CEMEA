@@ -140,7 +140,7 @@
                 <h5 class="modal-title" style="margin-left: 40px;">S'inscrire à une formation</h5>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body" style="overflow-y: inherit !important;">
                 <form method="post">
                 <ul>
                 <div class="form-group w-50">
