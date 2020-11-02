@@ -206,37 +206,27 @@
                 <div class="form-group w-50">
                     <input type="text" class="form-control" name="fax" placeholder="Fax">
 
-                    <p>Quelle est votre occupation?</p>
+                <p>Quelle est votre occupation ?</p>
                 <div class="custom-control custom-radio">
-                        <input type="radio" id="radioTravailleur" name="occupation" value="Travailleur" required onclick="validate();" class="custom-control-input">
-                        <label class="custom-control-label" for="radioTravailleur">Travailleur.euse</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" id="radioEtudiant" name="occupation" value="Etudiant" required onclick="validate();" class="custom-control-input">
-                        <label class="custom-control-label" for="radioEtudiant">Etudiant.e</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" id="radioChomage" name="occupation" value="Chomage" required onclick="validate();" class="custom-control-input">
-                        <label class="custom-control-label" for="radioChomage">Demandeur.euse d'emploi</label>
-                    </div>
-                        <script type="text/javascript">
-                            function validate() {
-                                var radioTravailleur = document.getElementById('radioTravailleur');
-                                var textarea = document.getElementById('occupationcomment');
-
-                                if (radioTravailleur.checked && occupationcomment.value.length < 1) {
-                                    occupationcomment.focus();
-                                    document.getElementById('occupationcomment').disabled = false;
-                                    return false;
-                                } else {
-                                    document.getElementById('occupationcomment').disabled = true;
-                                }     
-                            }
-                        </script><br>
-                        <div class="form-group w-50">
-                            <input class="form-control" name="occupationcomment" id="occupationcomment" placeholder="Profession excercée, lieu de travail et téléphone professionnel" rows="5" cols="40" required>
-                        </div>
-
+                    <input type="radio" onclick="javascript:yesnoCheck();" name="yesno" id="studyCheck">
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" onclick="javascript:yesnoCheck();" name="yesno" id="noCheck">
+                </div>
+                <br>
+                <div id="ifYes" style="visibility:hidden">
+                    Etudes en cours: <input type='text' id='yes' name='yes'><br>
+                    Nom de l'établissement:  <input type='text' id='acc' name='acc'>
+                </div>
+                <script>
+                    function yesnoCheck() {
+                        if (document.getElementById('studyCheck').checked) {
+                            document.getElementById('ifYes').style.visibility = 'visible';
+                        }
+                        else document.getElementById('ifYes').style.visibility = 'hidden';
+                    }    
+                </script>
+                </br>
                     <p>Faites-vous partie d'une association?<br>
                     <div class="custom-control custom-radio">
                         <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
