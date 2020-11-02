@@ -208,23 +208,39 @@
 
                 <p>Quelle est votre occupation ?</p>
                 <div class="custom-control custom-radio">
-                    <input type="radio" onclick="javascript:yesnoCheck();" name="yesno" id="studyCheck">
+                    <input type="radio" onclick="javascript:etudiantCheck();" name="yesno" id="studyCheck">
+                        <label>Etudiant.e</label>
                 </div>
                 <div class="custom-control custom-radio">
-                    <input type="radio" onclick="javascript:yesnoCheck();" name="yesno" id="noCheck">
+                    <input type="radio" onclick="javascript:travailCheck();" name="yesno" id="workCheck">
+                        <label>Travailleur.euse</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" onclick="javascript:chercheurCheck();" name="yesno" id="chomageCheck">
+                        <label>Demandeur.euse d'emploi</label>
                 </div>
                 <br>
-                <div id="ifYes" style="visibility:hidden">
-                    Etudes en cours: <input type='text' id='yes' name='yes'><br>
-                    Nom de l'établissement:  <input type='text' id='acc' name='acc'>
+                <div class="form-group w-50" id="ifOne" style="visibility:hidden" required>
+                    Etudes en cours: <input class="form-control" type='text' id='yes' name='yes'><br>
+                    Nom de l'établissement:  <input class="form-control" type='text' id='acc' name='acc'>
+                </div>
+                <div class="form-group w-50" id="ifTwo" style="visibility:hidden" required>
+                    Profession: <input class="form-control" type='text' id='yes' name='yes'><br>
+                    Lieu de travail:  <input class="form-control" type='text' id='acc' name='acc'>
                 </div>
                 <script>
-                    function yesnoCheck() {
+                    function etudiantCheck() {
                         if (document.getElementById('studyCheck').checked) {
-                            document.getElementById('ifYes').style.visibility = 'visible';
+                            document.getElementById('ifOne').style.visibility = 'visible';
                         }
-                        else document.getElementById('ifYes').style.visibility = 'hidden';
-                    }    
+                        else document.getElementById('ifOne').style.visibility = 'hidden';
+                    }
+                    function travailCheck() {
+                        if (document.getElementById('workCheck').checked) {
+                            document.getElementById('ifTwo').style.visibility = 'visible';
+                        }
+                        else document.getElementById('ifTwo').style.visibility = 'hidden';
+                    }  
                 </script>
                 </br>
                     <p>Faites-vous partie d'une association?<br>
