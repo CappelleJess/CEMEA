@@ -205,19 +205,38 @@
                 </div>
                 <div class="form-group w-50">
                     <input type="text" class="form-control" name="fax" placeholder="Fax">
-                </div>
-                    <div class="form-group">
-                    <section class="col-sm-2">
-                    <form class="form-inline">
-                        <select class="custom-select my-3 mr-sm-3" id="occupation">
-                            <option disabled selected>Occupation</option>
-                            <option value="1">Étudiant.e</option>
-                            <option value="2">Travailleur.se</option>
-                            <option value="3">Demandeur.euse d'emploi</option>
-                        </select>
-                    </form>
-                </section>
-                </div>
+
+                    <p>Quelle est votre occupation?</p>
+                <div class="custom-control custom-radio">
+                        <input type="radio" id="radioTravailleur" name="occupation" value="Travailleur" required onclick="validate();" class="custom-control-input">
+                        <label class="custom-control-label" for="radioTravailleur">Travailleur.euse</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="radioEtudiant" name="occupation" value="Etudiant" required onclick="validate();" class="custom-control-input">
+                        <label class="custom-control-label" for="radioEtudiant">Etudiant.e</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="radioChomage" name="occupation" value="Chomage" required onclick="validate();" class="custom-control-input">
+                        <label class="custom-control-label" for="radioChomage">Demandeur.euse d'emploi</label>
+                    </div>
+                        <script type="text/javascript">
+                            function validate() {
+                                var radioTravailleur = document.getElementById('radioTravailleur');
+                                var textarea = document.getElementById('occupationcomment');
+
+                                if (radioTravailleur.checked && occupationcomment.value.length < 1) {
+                                    occupationcomment.focus();
+                                    document.getElementById('occupationcomment').disabled = false;
+                                    return false;
+                                } else {
+                                    document.getElementById('occupationcomment').disabled = true;
+                                }     
+                            }
+                        </script><br>
+                        <div class="form-group w-50">
+                            <input class="form-control" name="occupationcomment" id="occupationcomment" placeholder="Profession excercée, lieu de travail et téléphone professionnel" rows="5" cols="40" required>
+                        </div>
+
                     <p>Faites-vous partie d'une association?<br>
                     <div class="custom-control custom-radio">
                         <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
