@@ -210,7 +210,7 @@
                 <div class="panel-group" id="accordion">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <input type='radio' id='r11' name='occupation' value='Working' required/> Travailleur.euse
+                            <input type='radio' id='r11' name='occupation' value='Working' required /> Travailleur.euse
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"></a>
                         </div>
                             <div id="collapseOne" class="panel-collapse collapse in">
@@ -224,7 +224,7 @@
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <input type='radio' id='r12' name='occupation' value='Study' required/> Etudiant.e
+                            <input type='radio' id='r12' name='occupation' value='Not-Working' required /> Etudiant.e
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"></a>
                         </div>
                             <div id="collapseTwo" class="panel-collapse collapse">
@@ -238,7 +238,7 @@
                         </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <input type='radio' id='r13' name='occupation' value='Not-Working' required/> Demandeur.euse d'emploi
+                            <input type='radio' id='r13' name='occupation' value='Not-Working' required />Demandeur.euse d'emploi
                     </div>
                 </div>
                 <script type="text/javascript">
@@ -301,110 +301,27 @@
                         </div>
 
                         <br>
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" dropdown container="body">Centres d'intérêt</button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <label class="dropdown-item">
-                                        <input type="checkbox" name="dropdown-group" value="01" style="margin-right: 10px;"/>Programme complet des formations
-                                    </label>
-                                    <label class="dropdown-item">
-                                        <input type="checkbox" name="dropdown-group" value="02" style="margin-right: 10px;"/>Centres et plaines de vacances - Ateliers d’expression
-                                    </label>
-                                    <label class="dropdown-item">
-                                        <input type="checkbox" name="dropdown-group" value="03" style="margin-right: 10px;"/>Animateur volontaire de jeunesse
-                                    </label>
-                                    <label class="dropdown-item">
-                                        <input type="checkbox" name="dropdown-group" value="04" style="margin-right: 10px;"/>Animateur professionnel et animation de quartier
-                                    </label>
-                                    <label class="dropdown-item">
-                                        <input type="checkbox" name="dropdown-group" value="05" style="margin-right: 10px;"/>Coordinateur volontaire de jeunesse
-                                    </label>
-                                    <label class="dropdown-item">
-                                        <input type="checkbox" name="dropdown-group" value="06" style="margin-right: 10px;"/>Formation pour formateurs
-                                    </label>
-                                    <label class="dropdown-item">
-                                        <input type="checkbox" name="dropdown-group" value="07" style="margin-right: 10px;"/>Petite enfance
-                                    </label>
-                                    <label class="dropdown-item">
-                                        <input type="checkbox" name="dropdown-group" value="08" style="margin-right: 10px;"/>Enseignement
-                                    </label>
-                                    <label class="dropdown-item">
-                                        <input type="checkbox" name="dropdown-group" value="09" style="margin-right: 10px;"/>Accueillant(e) extra-scolaire
-                                    </label>
-                                    <label class="dropdown-item">
-                                        <input type="checkbox" name="dropdown-group" value="10" style="margin-right: 10px;"/>Formation de délégués d’élèves
-                                    </label>
-                                    <label class="dropdown-item">
-                                        <input type="checkbox" name="dropdown-group" value="11" style="margin-right: 10px;"/>Rencontres entre l’enseignement spécial et l’enseignement ordinaire
-                                    </label>
-                                    <label class="dropdown-item">
-                                        <input type="checkbox" name="dropdown-group" value="12" style="margin-right: 10px;"/>Handicap et intégration
-                                    </label>
-                                    <label class="dropdown-item">
-                                        <input type="checkbox" name="dropdown-group" value="13" style="margin-right: 10px;"/>Action sociale
-                                    </label>
-                                    <label class="dropdown-item">
-                                        <input type="checkbox" name="dropdown-group" value="14" style="margin-right: 10px;"/>Santé
-                                    </label>
-                                    <label class="dropdown-item">
-                                        <input type="checkbox" name="dropdown-group" value="15" style="margin-right: 10px;"/>Pédagogie
-                                    </label>
-                                    <label class="dropdown-item">
-                                        <input type="checkbox" name="dropdown-group" value="16" style="margin-right: 10px;"/>Jeunes enfants 2,5 - 8 ans
-                                    </label>
-                                    <label class="dropdown-item">
-                                        <input type="checkbox" name="dropdown-group" value="17" style="margin-right: 10px;"/>Audio-visuel
-                                    </label>
-                                    <label class="dropdown-item">
-                                        <input type="checkbox" name="dropdown-group" value="18" style="margin-right: 10px;"/>Activités théâtrales, expression corporelle
-                                    </label>
-                                    <label class="dropdown-item">
-                                        <input type="checkbox" name="dropdown-group" value="19" style="margin-right: 10px;"/>Expression orale et écrite
-                                    </label>
-                                    <label class="dropdown-item">
-                                        <input type="checkbox" name="dropdown-group" value="20" style="margin-right: 10px;"/>Activités manuelles et plastiques
-                                    </label>
-                                    <label class="dropdown-item">
-                                        <input type="checkbox" name="dropdown-group" value="21" style="margin-right: 10px;"/>Découverte du milieu
-                                    </label>
-                                    <label class="dropdown-item">
-                                        <input type="checkbox" name="dropdown-group" value="22" style="margin-right: 10px;"/>Activités musicales
-                                    </label>
-                                    <label class="dropdown-item">
-                                        <input type="checkbox" name="dropdown-group" value="23" style="margin-right: 10px;"/>Jeux et activités physiques
-                                    </label>
-                                    <label class="dropdown-item">
-                                        <input type="checkbox" name="dropdown-group" value="24" style="margin-right: 10px;"/>Initiation technique et scientifique
-                                    </label>
-                                    <label class="dropdown-item">
-                                        <input type="checkbox" name="dropdown-group" value="25" style="margin-right: 10px;"/>Communication et gestion des groupes
-                                    </label>
-                                    <label class="dropdown-item">
-                                        <input type="checkbox" name="dropdown-group" value="26" style="margin-right: 10px;"/>Gestion et collectivité
-                                    </label>
-                                    <label class="dropdown-item">
-                                        <input type="checkbox" name="dropdown-group" value="27" style="margin-right: 10px;"/>Formation qualifiante
-                                    </label>
-                                    <label class="dropdown-item">
-                                        <input type="checkbox" name="dropdown-group" value="28" style="margin-right: 10px;"/>Pour une éducation à l’égalité des genres
-                                    </label>
-                                    <label class="dropdown-item">
-                                        <input type="checkbox" name="dropdown-group" value="29" style="margin-right: 10px;"/>Festival du Film d’Education
-                                    </label>
-                                    <label class="dropdown-item">
-                                        <input type="checkbox" name="dropdown-group" value="30" style="margin-right: 10px;"/>Newsletter du secteur Numérique
-                                    </label>
-                                    <label class="dropdown-item">
-                                        <input type="checkbox" style="margin-right: 10px;" id="selectall" name="selectall" autocomplete="off" checked onclick="eventCheckBox()"/>Tout sélectionner
+
+                        <div class="panel-group driving-license-settings" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                        <a data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne">
+                                        <button type="button" class="btn btn-secondary dropdown-toggle" id="chk1" value=""> 
+                                        Centres d'intérêts</button>
+                                        </a>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <div class="driving-license-kind">
+
+                                            <div class="checkbox">
+                                                <input type="checkbox" class="ui-checkbox" id="chk2" value="" style="margin-right: 10px;">
+                                                <label for="chk2">Programme complet des formations</label>
+                                            </div>
+
                                             <script type="text/javascript">
-                                                function eventCheckBox() {
-                                                    let checkboxs = document.getElementsByTagName("input");
-                                                    for(let i = 1; i < checkboxs.length ; i++) {
-                                                        checkboxs[i].checked = !checkboxs[i].checked;
-                                                    }
-                                                }
+                                                $('.collapse').collapse();
                                             </script>
-                                    </label>
                                 </div>
                         </div>
                         <!--<script type="text/javascript">
