@@ -210,7 +210,7 @@
                 <div class="panel-group" id="accordion">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <input type='radio' id='r11' name='occupation' value='Working' required /> Travailleur.euse
+                            <input type='radio' id='r11' name='occupation' value='Working' required/> Travailleur.euse
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"></a>
                         </div>
                             <div id="collapseOne" class="panel-collapse collapse in">
@@ -224,7 +224,7 @@
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <input type='radio' id='r12' name='occupation' value='Study' required /> Etudiant.e
+                            <input type='radio' id='r12' name='occupation' value='Study' required/> Etudiant.e
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"></a>
                         </div>
                             <div id="collapseTwo" class="panel-collapse collapse">
@@ -238,7 +238,7 @@
                         </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <input type='radio' id='r13' name='occupation' value='Not-Working' required />Demandeur.euse d'emploi
+                            <input type='radio' id='r13' name='occupation' value='Not-Working' required/> Demandeur.euse d'emploi
                     </div>
                 </div>
                 <script type="text/javascript">
