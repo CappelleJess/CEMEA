@@ -132,9 +132,9 @@
         </style>
     </head>
         <body>
-            <div class="bs-example">
+            <div class="bs-example" >
             <div id="myModal" class="modal fade bd-exemple" tabindex="-1" >
-            <div class="modal-dialog modal-lg">
+            <div class="modal-dialog modal-lg" style="height: 100%; overflow-y: auto;">
             <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" style="margin-left: 40px;">S'inscrire à une formation</h5>
