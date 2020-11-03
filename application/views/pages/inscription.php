@@ -134,7 +134,7 @@
         <body>
             <div class="bs-example" >
             <div id="myModal" class="modal fade bd-exemple" tabindex="-1" >
-            <div class="modal-dialog modal-lg" style="height: 100%; overflow-y: auto;">
+            <div class="modal-dialog modal-lg" style="overflow:visible;min-height:100%!important;">
             <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" style="margin-left: 40px;">S'inscrire à une formation</h5>
@@ -208,21 +208,30 @@
                 <br>
                 <p>Quelle est votre occupation ?</p>
                 <div class="custom-control custom-radio">
-                    <input type="radio" onclick="javascript:etudiantCheck();" name="yesno" id="studyCheck">
-                        <label>Etudiant.e</label>
+                    <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                        <input type="radio" onclick="javascript:etudiantCheck();" name="yesno" id="studyCheck">
+                            <label>Etudiant.e</label></a>
                 </div>
                 <div class="custom-control custom-radio">
-                    <input type="radio" onclick="javascript:travailCheck();" name="yesno" id="workCheck">
-                        <label>Travailleur.euse</label>
+                        <input type="radio" onclick="javascript:travailCheck();" name="yesno" id="workCheck">
+                            <label>Travailleur.euse</label>
                 </div>
                 <div class="custom-control custom-radio">
-                    <input type="radio" onclick="javascript:chercheurCheck();" name="yesno" id="chomageCheck">
-                        <label>Demandeur.euse d'emploi</label>
+                        <input type="radio" onclick="javascript:chercheurCheck();" name="yesno" id="chomageCheck">
+                            <label>Demandeur.euse d'emploi</label>
                 </div>
                 <br>
                 <div class="form-group w-50" id="ifOne" style="visibility:hidden" required>
-                    Etudes en cours: <input class="form-control" type='text' id='yes' name='yes'><br>
-                    Nom de l'établissement:  <input class="form-control" type='text' id='acc' name='acc'>
+                    <div class="row">
+                        <div class="col">
+                            <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                <div class="card card-body">
+                                    Etudes en cours: <input class="form-control" type='text' id='yes' name='yes'><br>
+                                    Nom de l'établissement:  <input class="form-control" type='text' id='acc' name='acc'>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="form-group w-50" id="ifTwo" style="visibility:hidden" required>
                     Profession: <input class="form-control" type='text' id='yes' name='yes'><br>
@@ -289,12 +298,12 @@
                             }
                         </script><br>
                         <div class="form-group w-50">
-                            <input class="form-control" id="facturecomment" placeholder="Veuillez inscrire l'adresse complète"style="width: 400px;" required>
+                            <input class="form-control" id="facturecomment" placeholder="Veuillez inscrire l'adresse complète"style="width: 370px;" required>
                         </div>
 
                         <br>
                         <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Centres d'intérêt</button>
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" dropdown container="body">Centres d'intérêt</button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                     <label class="dropdown-item">
                                         <input type="checkbox" name="dropdown-group" value="01" style="margin-right: 10px;"/>Programme complet des formations
