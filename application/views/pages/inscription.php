@@ -205,7 +205,7 @@
                 </div>
                 <div class="form-group w-50">
                     <input type="text" class="form-control" name="fax" placeholder="Fax">
-
+                <br>
                 <p>Quelle est votre occupation ?</p>
                 <div class="custom-control custom-radio">
                     <input type="radio" onclick="javascript:etudiantCheck();" name="yesno" id="studyCheck">
@@ -289,7 +289,7 @@
                             }
                         </script><br>
                         <div class="form-group w-50">
-                            <input class="form-control" name="facturecomment" id="facturecomment" placeholder="Veuillez inscrire l'adresse complète" rows="5" cols="40" required>
+                            <input class="form-control" id="facturecomment" placeholder="Veuillez inscrire l'adresse complète"style="width: 400px;" required>
                         </div>
 
                         <br>
