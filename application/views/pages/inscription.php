@@ -206,51 +206,50 @@
                 <div class="form-group w-50">
                     <input type="text" class="form-control" name="fax" placeholder="Fax">
                 <br>
-                <p>Quelle est votre occupation ?</p>
-                <div class="custom-control custom-radio">
-                    <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
-                        <input type="radio" onclick="javascript:etudiantCheck();" name="yesno" id="studyCheck">
-                            <label>Etudiant.e</label></a>
-                </div>
-                <div class="custom-control custom-radio">
-                        <input type="radio" onclick="javascript:travailCheck();" name="yesno" id="workCheck">
-                            <label>Travailleur.euse</label>
-                </div>
-                <div class="custom-control custom-radio">
-                        <input type="radio" onclick="javascript:chercheurCheck();" name="yesno" id="chomageCheck">
-                            <label>Demandeur.euse d'emploi</label>
-                </div>
-                <br>
-                <div class="form-group w-50" id="ifOne" style="visibility:hidden" required>
-                    <div class="row">
-                        <div class="col">
-                            <div class="collapse multi-collapse" id="multiCollapseExample1">
-                                <div class="card card-body">
-                                    Etudes en cours: <input class="form-control" type='text' id='yes' name='yes'><br>
-                                    Nom de l'établissement:  <input class="form-control" type='text' id='acc' name='acc'>
+
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <input type='radio' id='r11' name='occupation' value='Working' required /> Travailleur.euse
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"></a>
+                        </div>
+                            <div id="collapseOne" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <div class="form-group w-50" id="ifOne" required>
+                                        Profession: <input class="form-control" type='text' id='yes' name='yes'>
+                                        Lieu de Travail:  <input class="form-control" type='text' id='acc' name='acc'>
+                                        Téléphone:  <input class="form-control" type='text' id='acc' name='acc'>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <input type='radio' id='r12' name='occupation' value='Study' required /> Etudiant.e
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"></a>
+                        </div>
+                            <div id="collapseTwo" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="form-group w-50" id="ifOne" required>
+                                        Etudes en cours: <input class="form-control" type='text' id='yes' name='yes'>
+                                        Nom de l'établissement:  <input class="form-control" type='text' id='acc' name='acc'>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <input type='radio' id='r13' name='occupation' value='Not-Working' required />Demandeur.euse d'emploi
                     </div>
                 </div>
-                <div class="form-group w-50" id="ifTwo" style="visibility:hidden" required>
-                    Profession: <input class="form-control" type='text' id='yes' name='yes'><br>
-                    Lieu de travail:  <input class="form-control" type='text' id='acc' name='acc'>
-                </div>
-                <script>
-                    function etudiantCheck() {
-                        if (document.getElementById('studyCheck').checked) {
-                            document.getElementById('ifOne').style.visibility = 'visible';
-                        }
-                        else document.getElementById('ifOne').style.visibility = 'hidden';
-                    }
-                    function travailCheck() {
-                        if (document.getElementById('workCheck').checked) {
-                            document.getElementById('ifTwo').style.visibility = 'visible';
-                        }
-                        else document.getElementById('ifTwo').style.visibility = 'hidden';
-                    }  
-                </script>
+                <script type="text/javascript">
+                    $('#r11').on('click', function(){
+                        $(this).parent().find('a').trigger('click')
+                    })
+
+                    $('#r12').on('click', function(){
+                        $(this).parent().find('a').trigger('click')
+                    })</script>
+
                 </br>
                     <p>Faites-vous partie d'une association?<br>
                     <div class="custom-control custom-radio">
