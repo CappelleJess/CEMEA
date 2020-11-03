@@ -132,9 +132,9 @@
         </style>
     </head>
         <body>
-            <div class="bs-example" >
+            <div class="bs-example">
             <div id="myModal" class="modal fade bd-exemple" tabindex="-1" >
-            <div class="modal-dialog modal-lg" style="overflow:visible;min-height:100%!important;">
+            <div class="modal-dialog modal-xl" style="overflow:visible;min-height:100%!important;">
             <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" style="margin-left: 40px;">S'inscrire à une formation</h5>
@@ -224,13 +224,13 @@
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <input type='radio' id='r12' name='occupation' value='Not-Working' required /> Etudiant.e
+                            <input type='radio' id='r12' name='occupation' value='Not-Working' required /> Étudiant.e
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"></a>
                         </div>
                             <div id="collapseTwo" class="panel-collapse collapse">
                                 <div class="panel-body">
                                     <div class="form-group w-50" id="ifOne" required>
-                                        Etudes en cours: <input class="form-control" type='text' id='yes' name='yes'>
+                                        Études en cours: <input class="form-control" type='text' id='yes' name='yes'>
                                         Nom de l'établissement:  <input class="form-control" type='text' id='acc' name='acc'>
                                     </div>
                                 </div>
@@ -310,13 +310,159 @@
                                         Centres d'intérêts</button>
                                         </a>
                                 </div>
-                                <div id="collapseOne" class="panel-collapse collapse in">
+                            </div></br>
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                                     <div class="panel-body">
-                                        <div class="driving-license-kind">
+                                        <div class="centre-interet">
 
                                             <div class="checkbox">
                                                 <input type="checkbox" class="ui-checkbox" id="chk2" value="" style="margin-right: 10px;">
                                                 <label for="chk2">Programme complet des formations</label>
+                                            </div>
+
+                                            <div class="checkbox">
+                                                <input type="checkbox" class="ui-checkbox" id="chk3" value="" style="margin-right: 10px;">
+                                                <label for="chk3">Centres et plaines de vacances - Ateliers d’expression</label>
+                                            </div>
+
+                                            <div class="checkbox">
+                                                <input type="checkbox" class="ui-checkbox" id="chk4" value="" style="margin-right: 10px;">
+                                                <label for="chk4">Animateur volontaire de jeunesse</label>
+                                            </div>
+
+                                            <div class="checkbox">
+                                                <input type="checkbox" class="ui-checkbox" id="chk5" value="" style="margin-right: 10px;">
+                                                <label for="chk5">Animateur professionnel et animation de quartier</label>
+                                            </div>
+
+                                            <div class="checkbox">
+                                                <input type="checkbox" class="ui-checkbox" id="chk6" value="" style="margin-right: 10px;">
+                                                <label for="chk6">Coordinateur volontaire de jeunesse</label>
+                                            </div>
+
+                                            <div class="checkbox">
+                                                <input type="checkbox" class="ui-checkbox" id="chk7" value="" style="margin-right: 10px;">
+                                                <label for="chk7">Formation pour formateurs</label>
+                                            </div>
+
+                                            <div class="checkbox">
+                                                <input type="checkbox" class="ui-checkbox" id="chk8" value="" style="margin-right: 10px;">
+                                                <label for="chk8">Petite enfance</label>
+                                            </div>
+
+                                            <div class="checkbox">
+                                                <input type="checkbox" class="ui-checkbox" id="chk9" value="" style="margin-right: 10px;">
+                                                <label for="chk9">Enseignement</label>
+                                            </div>
+
+                                            <div class="checkbox">
+                                                <input type="checkbox" class="ui-checkbox" id="chk10" value="" style="margin-right: 10px;">
+                                                <label for="chk10">Accueillant(e) extra-scolaire</label>
+                                            </div>
+
+                                            <div class="checkbox">
+                                                <input type="checkbox" class="ui-checkbox" id="chk11" value="" style="margin-right: 10px;">
+                                                <label for="chk11">Formation de délégués d'élèves</label>
+                                            </div>
+
+                                            <div class="checkbox">
+                                                <input type="checkbox" class="ui-checkbox" id="chk12" value="" style="margin-right: 10px;">
+                                                <label for="chk12">Rencontres entre l'enseignement spécialete l'enseignement ordinaire</label>
+                                            </div>
+
+                                            <div class="checkbox">
+                                                <input type="checkbox" class="ui-checkbox" id="chk13" value="" style="margin-right: 10px;">
+                                                <label for="chk13">Handicap et intégration</label>
+                                            </div>
+
+                                            <div class="checkbox">
+                                                <input type="checkbox" class="ui-checkbox" id="chk14" value="" style="margin-right: 10px;">
+                                                <label for="chk14">Action sociale</label>
+                                            </div>
+
+                                            <div class="checkbox">
+                                                <input type="checkbox" class="ui-checkbox" id="chk15" value="" style="margin-right: 10px;">
+                                                <label for="chk15">Santé</label>
+                                            </div>
+
+                                            <div class="checkbox">
+                                                <input type="checkbox" class="ui-checkbox" id="chk16" value="" style="margin-right: 10px;">
+                                                <label for="chk16">Pédagogie</label>
+                                            </div>
+
+                                            <div class="checkbox">
+                                                <input type="checkbox" class="ui-checkbox" id="chk17" value="" style="margin-right: 10px;">
+                                                <label for="chk17">Jeunes enfants 2,5 - 8 ans</label>
+                                            </div>
+
+                                            <div class="checkbox">
+                                                <input type="checkbox" class="ui-checkbox" id="chk18" value="" style="margin-right: 10px;">
+                                                <label for="chk18">Audio-visuel</label>
+                                            </div>
+
+                                            <div class="checkbox">
+                                                <input type="checkbox" class="ui-checkbox" id="chk19" value="" style="margin-right: 10px;">
+                                                <label for="chk19">Activités théatrales, expression corporelle</label>
+                                            </div>
+
+                                            <div class="checkbox">
+                                                <input type="checkbox" class="ui-checkbox" id="chk20" value="" style="margin-right: 10px;">
+                                                <label for="chk20">Expression orale et écrite</label>
+                                            </div>
+
+                                            <div class="checkbox">
+                                                <input type="checkbox" class="ui-checkbox" id="chk21" value="" style="margin-right: 10px;">
+                                                <label for="chk21">Activités manuelles et plastiques</label>
+                                            </div>
+
+                                            <div class="checkbox">
+                                                <input type="checkbox" class="ui-checkbox" id="chk22" value="" style="margin-right: 10px;">
+                                                <label for="chk22">Découverte du milieu</label>
+                                            </div>
+
+                                            <div class="checkbox">
+                                                <input type="checkbox" class="ui-checkbox" id="chk23" value="" style="margin-right: 10px;">
+                                                <label for="chk23">Activités musicales</label>
+                                            </div>
+
+                                            <div class="checkbox">
+                                                <input type="checkbox" class="ui-checkbox" id="chk24" value="" style="margin-right: 10px;">
+                                                <label for="chk24">Jeux et activités physiques</label>
+                                            </div>
+
+                                            <div class="checkbox">
+                                                <input type="checkbox" class="ui-checkbox" id="chk25" value="" style="margin-right: 10px;">
+                                                <label for="chk25">Initiation technique et scientifique</label>
+                                            </div>
+
+                                            <div class="checkbox">
+                                                <input type="checkbox" class="ui-checkbox" id="chk26" value="" style="margin-right: 10px;">
+                                                <label for="chk26">Communication et gestion des groupes</label>
+                                            </div>
+
+                                            <div class="checkbox">
+                                                <input type="checkbox" class="ui-checkbox" id="chk27" value="" style="margin-right: 10px;">
+                                                <label for="chk27">Gestion et collectivité</label>
+                                            </div>
+
+                                            <div class="checkbox">
+                                                <input type="checkbox" class="ui-checkbox" id="chk28" value="" style="margin-right: 10px;">
+                                                <label for="chk28">Formation qualifiante</label>
+                                            </div>
+
+                                            <div class="checkbox">
+                                                <input type="checkbox" class="ui-checkbox" id="chk29" value="" style="margin-right: 10px;">
+                                                <label for="chk29">Pour une éducation à l'égalité des genres</label>
+                                            </div>
+
+                                            <div class="checkbox">
+                                                <input type="checkbox" class="ui-checkbox" id="chk30" value="" style="margin-right: 10px;">
+                                                <label for="chk30">Festival du film d'Éducation</label>
+                                            </div>
+
+                                            <div class="checkbox">
+                                                <input type="checkbox" class="ui-checkbox" id="chk31" value="" style="margin-right: 10px;">
+                                                <label for="chk31">Newsletter du secteur Numérique</label>
                                             </div>
 
                                             <script type="text/javascript">
