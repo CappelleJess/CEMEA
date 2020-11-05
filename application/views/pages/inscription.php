@@ -207,7 +207,7 @@
                     <input type="text" class="form-control" name="fax" placeholder="Fax">
                 <br>
 
-                <div class="panel-group" id="accordion">
+                <div class="panel-group" id="accordion" >
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <input type='radio' id='r11' name='occupation' value='Working' required /> Travailleur.euse
