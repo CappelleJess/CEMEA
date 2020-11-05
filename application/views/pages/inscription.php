@@ -215,13 +215,14 @@
                         </div>
                             <div id="collapseOne" class="panel-collapse collapse in">
                                 <div class="panel-body">
-                                    <div class="form-group w-50" id="ifOne" required>
+                                    <div class="form-group w-50" id="ifOne" required >
                                         Profession: <input class="form-control" type='text' id='yes' name='yes'>
                                         Lieu de Travail:  <input class="form-control" type='text' id='acc' name='acc'>
                                         Téléphone:  <input class="form-control" type='text' id='acc' name='acc'>
                                 </div>
                             </div>
                     </div>
+                </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <input type='radio' id='r12' name='occupation' value='Not-Working' required /> Étudiant.e
@@ -236,9 +237,10 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <input type='radio' id='r13' name='occupation' value='Not-Working' required />Demandeur.euse d'emploi
+                            <input type='radio' id='r13' name='occupation' value='Not-Working' required/> Demandeur.euse d'emploi
                     </div>
                 </div>
                 <script type="text/javascript">
@@ -302,16 +304,16 @@
 
                         <br>
 
-                        <div class="panel-group driving-license-settings" id="accordion">
+                        <div class="panel-group centre-interet" id="accordion">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                        <a data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne">
+                                        <a data-toggle="collapse" data-parent="#accordion2" data-target="#collapseThree">
                                         <button type="button" class="btn btn-secondary dropdown-toggle" id="chk1" value=""> 
                                         Centres d'intérêts</button>
                                         </a>
                                 </div>
                             </div></br>
-                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                                     <div class="panel-body">
                                         <div class="centre-interet">
 
