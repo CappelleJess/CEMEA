@@ -211,15 +211,13 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <input type='radio' id='r11' name='occupation' value='Working' required /> Travailleur.euse
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"></a>
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" role="button" aria-expanded="false"></a>
                         </div>
-                            <div id="collapseOne" class="panel-collapse collapse in">
-                                <div class="panel-body">
-                                    <div class="form-group w-50" id="ifOne" required >
-                                        Profession: <input class="form-control" type='text' id='yes' name='yes'>
-                                        Lieu de Travail:  <input class="form-control" type='text' id='acc' name='acc'>
-                                        Téléphone:  <input class="form-control" type='text' id='acc' name='acc'>
-                                </div>
+                            <div class="collapse" id="collapseOne">
+                                <div class="card card-body">
+                                    Profession: <input class="form-control" type='text' id='yes' name='yes'>
+                                    Lieu de Travail:  <input class="form-control" type='text' id='acc' name='acc'>
+                                    Téléphone:  <input class="form-control" type='text' id='acc' name='acc'>
                             </div>
                     </div>
                 </div>
@@ -228,12 +226,10 @@
                             <input type='radio' id='r12' name='occupation' value='Not-Working' required /> Étudiant.e
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"></a>
                         </div>
-                            <div id="collapseTwo" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    <div class="form-group w-50" id="ifOne" required>
-                                        Études en cours: <input class="form-control" type='text' id='yes' name='yes'>
-                                        Nom de l'établissement:  <input class="form-control" type='text' id='acc' name='acc'>
-                                    </div>
+                            <div class="collapse" id="collapseTwo" >
+                                <div class="card card-body">
+                                    Études en cours: <input class="form-control" type='text' id='yes' name='yes'>
+                                    Nom de l'établissement:  <input class="form-control" type='text' id='acc' name='acc'>
                                 </div>
                             </div>
                         </div>
@@ -250,7 +246,8 @@
 
                     $('#r12').on('click', function(){
                         $(this).parent().find('a').trigger('click')
-                    })</script>
+                    })
+                </script>
 
                 </br>
                     <p>Faites-vous partie d'une association?<br>
