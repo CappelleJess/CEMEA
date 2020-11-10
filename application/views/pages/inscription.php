@@ -211,7 +211,7 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <input type='radio' id='r11' name='occupation' value='Working' required /> Travailleur.euse
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" role="button" aria-expanded="false"></a>
+                            <a data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseTwo"></a>
                         </div>
                             <div class="collapse" id="collapseOne">
                                 <div class="card card-body">
@@ -224,7 +224,7 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <input type='radio' id='r12' name='occupation' value='Not-Working' required /> Étudiant.e
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"></a>
+                            <a data-toggle="collapse" data-parent="#accordion" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"></a>
                         </div>
                             <div class="collapse" id="collapseTwo" >
                                 <div class="card card-body">
