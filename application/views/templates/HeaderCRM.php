@@ -26,19 +26,38 @@
       					<div class="collapse navbar-collapse" id="navbarsExampleDefault">
         					<ul class="navbar-nav mr-auto">
           						<li class="nav-item active">
+          							<i class="fas fa-clipboard"></i>
             						<a class="nav-link" href="home">Tableau de bord<span class="sr-only">(current)</span></a>
           						</li>
           						<li class="nav-item">
+          							<i class="fas fa-coins"></i>
           							<a class="nav-link" href="formations">Gestion de payement</a>
           						</li>
          	    				<li class="nav-item">
-            						<a class="nav-link" href="contact">Gestion membres</a>
+         	    					<i class="fas fa-user-cog"></i>
+         	    					<a class="nav-link" href="contact">Gestion membres</a>
             							<ul class="dropdown-menu">
-            								<li><a href="#">Inscription</a></li> 
-    										<li><a href="#">Participants</a></li> 
-    										<li><a href="#">Actions</a></li> 
+            								<li><i class="fas fa-pen-nib"></i><a href="#">Inscription</a></li> 
+    										<li><i class="fas fa-users"></i><a href="#">Participants</a></li> 
+    										<li><i class="fas fa-edit"></i><a href="#">Actions</a></li> 
     										<li role="separator" class="divider"></li> 
             							</ul>
+          						</li>
+          						<li class="nav-item">
+          							<i class="fas fa-tasks"></i>
+          							<a class="nav-link" href="formations">Requête</a>
+          						</li>
+          						<li class="nav-item">
+          							<i class="fas fa-flag-checkered"></i>
+          							<a class="nav-link" href="formations">Suivi</a>
+          						</li>
+          						<li class="nav-item">
+          							<i class="fas fa-file-export"></i>
+          							<a class="nav-link" href="formations">Exportation</a>
+          						</li>
+          						<li class="nav-item">
+          							<i class="fas fa-mouse-pointer"></i>
+          							<a class="nav-link" href="formations">Sélection des destinataires</a>
           						</li>
                       <li class="nav-item">
                         <a class="nav-link" href="signinup">Connexion</a>
