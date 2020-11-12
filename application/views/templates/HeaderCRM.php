@@ -8,7 +8,11 @@
     	<link rel="icon" href="../../../../favicon.ico">
     	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
     	<script type="text/javascript" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
-			
+        <script type="text/javascript">
+                $(document).ready( function () {
+                  $('#myTable').DataTable();
+                  } );
+        </script>
 			<title>CEMEA CRM</title>
 
         <link href="assets/css/bootstrap.min.css" rel="stylesheet">
