@@ -14,7 +14,6 @@
 
     <!-- Custom styles for this template -->
     	<link href="jumbotron.css" rel="stylesheet">
-  </head>
 	</head>
 		<body>
 			<h1><?php echo $title; ?></h1>

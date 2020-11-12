@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     	<meta name="description" content="">
     	<meta name="author" content="">
     	<link rel="icon" href="../../../../favicon.ico">
     	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
     	<script type="text/javascript" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
-    	
 			
 			<title>CEMEA CRM</title>
 
