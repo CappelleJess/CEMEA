@@ -1,6 +1,6 @@
 <?php
 
-App extends extends CI_Controller {
+class App extends CI_Controller {
 
 Function tableau_de_bord()
 {
