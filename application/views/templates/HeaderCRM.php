@@ -8,18 +8,13 @@
     	<link rel="icon" href="../../../../favicon.ico">
     	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
     	<script type="text/javascript" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
-        <script type="text/javascript">
-                $(document).ready( function () {
-                  $('#myTable').DataTable();
-                  } );
-        </script>
 			<title>CEMEA CRM</title>
 
         <link href="assets/css/bootstrap.min.css" rel="stylesheet">
         <link href="jumbotron.css" rel="stylesheet">
 	</head>
 		<body>
-			<h1><?php echo $title; ?></h1>
+
 			    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       				<a class="navbar-brand" href="#">CEMEA-CRM</a>
       				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
